@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h2>Formulário</h2>
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+        <label>Data: </label>
+        <input type="date" name="data"><br><br>
+
+        <fieldset>
+            <legend>Dados de Acesso</legend>
+            <label>Usuário: </label>
+            <input type="text" name="usuario"><br><br>
+            <label>Senha: </label>
+            <input type="password" name="senha"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>Nome: </label>
+            <input type="text" name="nome"><br><br>
+
+            <label>Endereço: </label>
+            <input type="text" name="endereco"><br><br>
+
+            <label>Número: </label>
+            <input type="number" name="numero"><br><br>
+
+            <label>Complemento: </label>
+            <input type="text" name="complemento"><br><br>
+
+            <label>Cidade: </label>
+            <input list="cidades" name="cidade">
+            <datalist id="cidades">
+                <option value="Sorocaba">
+                <option value="São Paulo">
+                <option value="Campinas">
+                <option value="Curitiba">
+            </datalist><br><br>
+
+            <label>Estado: </label>
+            <select name="estado">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PR">Paraná</option>
+            </select><br><br>
+
+            <label>CEP: </label>
+            <input type="text" name="cep"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gênero</legend>
+            <input type="radio" name="genero" value="masculino"> Masculino<br>
+            <input type="radio" name="genero" value="feminino"> Feminino<br>
+            <input type="radio" name="genero" value="nao_informar"> Prefiro não falar<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Curso</legend>
+            <input type="checkbox" name="curso" value="ADS"> ADS<br>
+            <input type="checkbox" name="curso" value="Jogos"> Jogos<br>
+            <input type="checkbox" name="curso" value="Gestao_TI"> Gestão de TI<br>
+            <input type="checkbox" name="curso" value="Banco_Dados"> Banco de Dados<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Modelo</legend>
+            <input type="radio" name="modelo" value="presencial"> Presencial<br>
+            <input type="radio" name="modelo" value="EAD"> EAD<br>
+            <input type="radio" name="modelo" value="semi_presencial"> Semi presencial<br>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
